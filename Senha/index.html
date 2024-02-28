@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Gere uma Senha aleatoria</h1>
+<br>
+<label>Tamanho da senha(Máximo 20 caracteres): </label>
+<input type="number" id="tamSenha" max="20" min="4"><br>
+<br>
+<label>Quantas senhas deseja?</label>
+<input type="number" id="quantidades" max="10" min="1">
+<br>
+<input type="checkbox" id="especial">Caracteres especiais
+
+<input type="checkbox" id="maiusculo">Letras Maiúsculas
+
+<input type="checkbox" id="numeros">Números
+<br>
+<button onclick="gerarSenha()">Gerar</button>
+<button  onclick="limparCampos()">Limpar senhas</button><br>
+<br>
+<textarea  id="senha" cols="30" rows="10">Senhas  serão geradas aqui.</textarea><br>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
